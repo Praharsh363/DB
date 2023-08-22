@@ -1,0 +1,119 @@
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+
+
+
+
+	</head>
+	
+	<body>
+		
+		<form class="grid" action="/result1" method="POST">
+			{% if Topic %}
+            <center>
+              <h3 style="color: blue;" class="let_space">The data entered about the topic{{Topic}} has been succesfully submitted to the database  </h3>
+            </center> 
+
+			{% endif %}			 
+			<h3>Enter the data to be added to the database </h3>
+				<input type="Topic" id="Topic" placeholder="Topic" name="Topic">
+				<br><br>
+				<input type="text" id="year" placeholder="year" name="year">
+				<br><br>
+				<input type="text" id="locabbr" placeholder="location abbriviation" name="location abbriviation">
+				<br><br>
+				<input type="text" id="text3" placeholder="location" name="location">
+				<br><br>
+				<input type="text" id="text4" placeholder="Question to Doctor" name="Question to Doctor">
+				<br><br>
+				<input type="text" id="text5" placeholder="DataValueUnit" name="DataValueUnit">
+				<br><br>
+				<input type="text" id="text6" placeholder="DataValueType" name="DataValueType">
+				<br><br>
+				<input type="text" id="text7" placeholder="DataValue" name="DataValue">
+				<br><br>
+				<input type="text" id="text8" placeholder="DataValueAlt" name="DataValueAlt">
+				<br><br>
+				<input type="text" id="text9" placeholder="StratificationCategory1" name="StratificationCategory1" >
+				<br><br>
+				<input type="text" id="text10" placeholder="Stratification1" name="Stratification1">
+				<br><br>
+				<input type="text" id="text11" placeholder="QuestionID" name="QuestionID">
+				<br><br>
+				<input type="text" id="text12" placeholder="DataValueTypeID" name="DataValueTypeID">
+				<br><br>
+				<input type="text" id="text13" placeholder="StratificationCategoryID1" name="StratificationCategoryID1">
+				<br><br>
+				<input type="text" id="text14" placeholder="StratificationID1" name="StratificationID1">
+				<br><br>
+				<input type="text" id="text15" placeholder="Latitude" name="Latitude">
+				<br><br>
+
+			<center><button onclick="location.href=/output" id=" btn2"> Submit Data </button></center>
+  
+		  </form>
+
+        <form class="grid" action="/result" method="POST">
+
+          {% if name %}
+            <center>
+              <h3 style="color: blue;" class="let_space">The customer {{name}} has a chance of getting {{Ans}} with a high probability </h3>
+            </center> 
+
+          {% endif %}
+           
+          <h3>Enter the details about the curstomers previous doctors appointments</h3>
+                    <input type="text" id="name" placeholder="name" name="name">
+                    <br><br>
+					<input type="text" id="year" placeholder="year" name="year">
+					<br><br>
+					<input type="text" id="locabbr" placeholder="location abbriviation" name="location abbriviation">
+					<br><br>
+					<input type="text" id="text3" placeholder="location" name="location">
+					<br><br>
+					<input type="text" id="text4" placeholder="Question to Doctor" name="Question to Doctor">
+					<br><br>
+					<input type="text" id="text5" placeholder="DataValueUnit" name="DataValueUnit">
+					<br><br>
+					<input type="text" id="text6" placeholder="DataValueType" name="DataValueType">
+					<br><br>
+					<input type="text" id="text7" placeholder="DataValue" name="DataValue">
+					<br><br>
+					<input type="text" id="text8" placeholder="DataValueAlt" name="DataValueAlt">
+					<br><br>
+					<input type="text" id="text9" placeholder="StratificationCategory1" name="StratificationCategory1" >
+					<br><br>
+					<input type="text" id="text10" placeholder="Stratification1" name="Stratification1">
+					<br><br>
+					<input type="text" id="text11" placeholder="QuestionID" name="QuestionID">
+					<br><br>
+					<input type="text" id="text12" placeholder="DataValueTypeID" name="DataValueTypeID">
+					<br><br>
+					<input type="text" id="text13" placeholder="StratificationCategoryID1" name="StratificationCategoryID1">
+					<br><br>
+					<input type="text" id="text14" placeholder="StratificationID1" name="StratificationID1">
+					<br><br>
+					<input type="text" id="text15" placeholder="Latitude" name="Latitude">
+					<br><br>
+
+          
+          <center><button onclick="location.href=/output" id=" btn1"> Evaluate topic </button></center>
+
+        </form>
+
+        
+
+        
+
+        
+        <br>
+        <br>
+        <br>
+
+
+    </body>
+
+</html>
